@@ -22,7 +22,7 @@ cp $dockerCompose $1/$dockerCompose
 cp $dockerignore $1/$dockerignore
 
 # cd $1 and install npm packages
-cd $1 && vue add tailwind && npm install @headlessui/vue @heroicons/vue dayjs vuedraggable@next
+cd $1 && vue add tailwind && npm install @headlessui/vue @heroicons/vue dayjs vuedraggable@next @vueform/multiselect animate.css --save && yarn add v-calendar@next
 
 # set up docker compose
 docker-compose up -d

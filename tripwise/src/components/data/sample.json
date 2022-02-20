@@ -1,0 +1,76 @@
+[
+  {
+    "id": "1",
+    "date": "12/06/21",
+    "location": "New York",
+    "origin": "New York NY, LGA",
+    "destination": "Charlotte NC, CLT",
+    "flightNumber": "American Airlines 2889",
+    "flightStartAt": "12/06/21 7:50 AM",
+    "flightEndAt": "12/06/21 10:12 AM",
+    "name": "Wei Wang",
+    "price": 299.9,
+    "priceCombo": [1, 2]
+  },
+  {
+    "id": "2",
+    "date": "12/06/21",
+    "location": "Charlotte",
+    "origin": "Charlotte NC, CLT",
+    "destination": "Honolulu HI, HNL",
+    "flightNumber": "American Airlines 2889",
+    "flightStartAt": "12/06/21 11:00 AM",
+    "flightEndAt": "12/06/21 4:01 PM",
+    "name": "Wei Wang",
+    "price": 299.9
+  },
+  {
+    "id": "3",
+    "date": "12/15/21",
+    "location": "Honolulu",
+    "origin": "Honolulu HI, HNL",
+    "destination": "Lihue HI, LIH",
+    "flightNumber": "Hawaiian Airlines 203",
+    "flightStartAt": "12/15/21 9:35 AM",
+    "flightEndAt": "12/15/21 10:18 AM",
+    "name": "Wei Wang",
+    "price": 679.04,
+    "priceCombo": [3, 4, 5, 6]
+  },
+  {
+    "id": "4",
+    "date": "12/16/21",
+    "location": "Kauai",
+    "origin": "Lihue HI, LIH",
+    "destination": "Kailua-Kona HI, KOA",
+    "flightNumber": "Hawaiian Airlines 320",
+    "flightStartAt": "12/16/21 5:30 PM",
+    "flightEndAt": "12/16/21 6:27 PM",
+    "name": "Wei Wang",
+    "price": 679.04
+  },
+  {
+    "id": "5",
+    "date": "12/19/21",
+    "location": "Big Island",
+    "origin": "Kailua-Kona HI, KOA",
+    "destination": "Los Angeles CA, LAX",
+    "flightNumber": "Delta 523",
+    "flightStartAt": "12/19/21 10:25 PM",
+    "flightEndAt": "12/19/21 5:34 AM",
+    "name": "Wei Wang",
+    "price": 679.04
+  },
+  {
+    "id": "6",
+    "date": "12/19/21",
+    "location": "Los Angeles",
+    "origin": "Los Angeles CA, LAX",
+    "destination": "Austin TX, AUS",
+    "flightNumber": "Delta 986523",
+    "flightStartAt": "12/19/21 09:00 AM",
+    "flightEndAt": "12/19/21 2:03 PM",
+    "name": "Wei Wang",
+    "price": 679.04
+  }
+]
