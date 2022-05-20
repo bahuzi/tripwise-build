@@ -50,15 +50,19 @@ export default defineComponent({
       modalData.value.listId = val.listId;
       modalData.value.action = val.action;
       modalData.value.data = list.value.filter(
-        (row: any) => row.id == val.listId
+        (row: { id: string }) => row.id == val.listId
       )[0];
       visible.value = true;
     }
     function remove(listId: string): void {
-      list.value = list.value.filter((row: any) => row.id !== listId);
+      list.value = list.value.filter(
+        (row: { id: string }) => row.id !== listId
+      );
     }
     function add(listId: string): void {
-      let tmpData = list.value.filter((row: any) => row.id == listId)[0]
+      let tmpData = list.value.filter(
+        (row: { id: string }) => row.id == listId
+      )[0];
       let addedObject = {
         id: "0",
         date: tmpData.date,
@@ -71,12 +75,14 @@ export default defineComponent({
         name: "Wei Wang",
         price: 0,
         priceCombo: [1, 2],
-      }
+      };
       list.value.splice(parseInt(listId), 0, addedObject);
       console.log(modalData.value.data);
     }
     function edit(listId: string): void {
-      modalData.value.data = list.value.filter((row: any) => row.id == listId);
+      modalData.value.data = list.value.filter(
+        (row: { id: string }) => row.id == listId
+      );
     }
     function onModal(val: string): void {
       visible.value = false;
