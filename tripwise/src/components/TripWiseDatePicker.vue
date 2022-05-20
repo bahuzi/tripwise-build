@@ -19,15 +19,16 @@
 </template>
 
 <script lang="ts">
+import "v-calendar/dist/style.css";
 import { ref, defineComponent } from "vue";
 import { DatePicker } from "v-calendar";
 import { ArrowRightIcon } from "@heroicons/vue/outline";
 export default defineComponent({
   name: "TripWiseDatePicker",
-  props: ['startDate', 'endDate'],
+  props: ["startDate", "endDate"],
   components: {
     DatePicker,
-    ArrowRightIcon
+    ArrowRightIcon,
   },
   setup(props) {
     const range = ref({
@@ -38,4 +39,3 @@ export default defineComponent({
   },
 });
 </script>
-<style src="v-calendar/dist/style.css"></style>

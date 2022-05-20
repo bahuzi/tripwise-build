@@ -39,7 +39,6 @@
 import { ref, defineComponent } from "vue";
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
 import TripWiseDragList from "./TripWiseDragList.vue";
-import Test from "./Test.vue";
 
 export default defineComponent({
   name: "TripWiseTab",

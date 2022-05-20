@@ -42,7 +42,7 @@
               >
                 {{ modalData.action }} Activity
               </DialogTitle>
-              <TripWiseSelect :modalData="modalData" @on-modal="onModal"/>
+              <TripWiseSelect :modalData="modalData" @on-modal="onModal" />
             </div>
           </TransitionChild>
         </div>
@@ -52,7 +52,7 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from "vue";
+import { defineComponent } from "vue";
 import { XIcon } from "@heroicons/vue/outline";
 import TripWiseSelect from "./TripWiseSelect.vue";
 
@@ -66,6 +66,7 @@ import {
 
 export default defineComponent({
   props: ["visible", "modalData"],
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Modal",
   components: {
     TransitionRoot,
@@ -78,14 +79,14 @@ export default defineComponent({
   },
   setup(props, context) {
     function onModal(val: string): void {
-     context.emit("onModal", val);
+      context.emit("onModal", val);
     }
     function closeModal() {
       context.emit("onModal", "cancel");
     }
     return {
       closeModal,
-      onModal
+      onModal,
     };
   },
 });
